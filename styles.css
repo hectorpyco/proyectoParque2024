@@ -124,3 +124,54 @@ footer {
         min-height: 350px;
     }
 }
+/* Estilos para el logo en header */
+.header-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.institutional-logo {
+    height: 80px;
+    width: auto;
+    max-width: 200px;
+}
+
+/* Estilos para el logo en footer */
+.footer-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.footer-logo {
+    height: 60px;
+    width: auto;
+    max-width: 150px;
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .logo-title {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .institutional-logo {
+        height: 60px;
+    }
+}
