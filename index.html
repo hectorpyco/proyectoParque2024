@@ -7,85 +7,14 @@
     <title>Archivo Digital: Histórico de Publicaciones del Parque Ñane Renda</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon_fcyt_unca.ico" type="image/x-icon">
-    
-    <!-- Performance optimizations -->
-    <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
-    <link rel="preconnect" href="https://www.facebook.com" crossorigin>
-    <link rel="dns-prefetch" href="https://connect.facebook.net">
-    <link rel="dns-prefetch" href="https://www.facebook.com">
-    
-    <!-- Facebook SDK - Optimized loading -->
     <div id="fb-root"></div>
-    <script>
-        // Load Facebook SDK asynchronously after page load
-        window.addEventListener('load', function() {
-            if (window.FB) return;
-            
-            const script = document.createElement('script');
-            script.async = true;
-            script.defer = true;
-            script.crossOrigin = 'anonymous';
-            script.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v19.0';
-            script.nonce = '[GENERATED_NONCE_HERE]';
-            document.head.appendChild(script);
-        });
-    </script>
-    
-    <!-- Lazy loading styles -->
-    <style>
-        /* Lazy loading skeleton */
-        .iframe-placeholder {
-            width: 100%;
-            height: 600px;
-            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-            background-size: 200% 100%;
-            animation: loading 1.5s infinite;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.1rem;
-            color: #666;
-            cursor: pointer;
-            border: 2px solid #3498db;
-            transition: all 0.3s ease;
-        }
-        
-        .iframe-placeholder:hover {
-            border-color: #2980b9;
-            background: #f8f9fa;
-        }
-        
-        @keyframes loading {
-            0% { background-position: 200% 0; }
-            100% { background-position: -200% 0; }
-        }
-        
-        .post-entry iframe {
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-        
-        .post-entry iframe.loaded {
-            opacity: 1;
-        }
-        
-        /* Optimized image loading */
-        .institutional-logo {
-            width: auto;
-            height: 80px;
-            max-width: 200px;
-            object-fit: contain;
-        }
-    </style>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v19.0"
+        nonce="[GENERATED_NONCE_HERE]"></script>
 </head>
 
 <body>
     <header>
-        <picture>
-            <source srcset="ISOLOGO-FCyT-PRINCIPAL.webp" type="image/webp">
-            <img src="ISOLOGO-FCyT-PRINCIPAL.jpg" alt="Logo FCyT UNCA" class="institutional-logo">
-        </picture>
+        <img src="ISOLOGO FCyT - PRINCIPAL.png" alt="Logo FCyT UNCA" class="institutional-logo">
         <h1>Archivo Digital: Histórico de Publicaciones de Facebook del Parque Ñane Renda</h1>
         <p class="subtitle">Un registro cronológico de las comunicaciones oficiales referentes al Proyecto Ejecutivo
             "Parque Ñane Renda", donado por la Facultad de Ciencias y Tecnologías (FCyT) a la Gobernación de Caaguazú en
@@ -103,177 +32,176 @@
                 inconsistencias.</p>
         </section>
 
-        <!-- OPTIMIZED TIMELINE WITH LAZY LOADING -->
+        <!-- SECCIÓN SIMPLIFICADA: SOLO FECHA + IFRAME -->
         <section class="timeline-simple">
+            <!-- EJEMPLO (pega tus publicaciones nuevas arriba de este comentario) -->
             <div class="post-entry">
                 <div class="post-date">8 de noviembre de 2024</div>
-                <div class="iframe-placeholder" 
-                     data-src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FAhoraNoticiasPY%2Fposts%2Fpfbid0aPSy357djsaHkZvXoAX2GsPiJ6UcUvM86EPuh4eftrVwMhXgUeqiKjgaWQQejohUl&show_text=true&width=500"
-                     data-width="500"
-                     data-height="786">
-                    <span>👆 Clic para cargar publicación de Facebook</span>
-                </div>
+                <iframe
+                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FAhoraNoticiasPY%2Fposts%2Fpfbid0aPSy357djsaHkZvXoAX2GsPiJ6UcUvM86EPuh4eftrVwMhXgUeqiKjgaWQQejohUl&show_text=true&width=500"
+                    width="500" height="786" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             </div>
 
             <div class="post-entry">
                 <div class="post-date">8 de noviembre de 2024</div>
-                <div class="iframe-placeholder" 
-                     data-src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FCORONELOVIEDOINFO%2Fvideos%2F1487089851821449%2F&show_text=true&width=560&t=0"
-                     data-width="560"
-                     data-height="429">
-                    <span>👆 Clic para cargar video de Facebook</span>
-                </div>
+                <iframe
+                    src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FCORONELOVIEDOINFO%2Fvideos%2F1487089851821449%2F&show_text=true&width=560&t=0"
+                    width="560" height="429" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    allowFullScreen="true"></iframe>
             </div>
-
             <div class="post-entry">
                 <div class="post-date">8 de noviembre de 2024</div>
-                <div class="iframe-placeholder" 
-                     data-src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffcyt.unca%2Fposts%2Fpfbid02Vjb8f4GNJZF1eThyqkTLdP2R7ZSPr5jTkHq1xQQHGTwYPpHvtL53JxLNU7S3E3C7l&show_text=true&width=500"
-                     data-width="500"
-                     data-height="786">
-                    <span>👆 Clic para cargar publicación de Facebook</span>
-                </div>
+                <iframe
+                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffcyt.unca%2Fposts%2Fpfbid02Vjb8f4GNJZF1eThyqkTLdP2R7ZSPr5jTkHq1xQQHGTwYPpHvtL53JxLNU7S3E3C7l&show_text=true&width=500"
+                    width="500" height="786" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             </div>
-
             <div class="post-entry">
                 <div class="post-date">8 de noviembre de 2024</div>
-                <div class="iframe-placeholder" 
-                     data-src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Ffcyt.unca%2Fvideos%2F1803790700427307%2F&show_text=true&width=267&t=0"
-                     data-width="267"
-                     data-height="786">
-                    <span>👆 Clic para cargar video de Facebook</span>
-                </div>
+                <iframe
+                    src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Ffcyt.unca%2Fvideos%2F1803790700427307%2F&show_text=true&width=267&t=0"
+                    width="267" height="786" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    allowFullScreen="true"></iframe>
             </div>
 
             <div class="post-entry">
                 <div class="post-date">7 de noviembre de 2024</div>
-                <div class="iframe-placeholder" 
-                     data-src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fnano.samudio%2Fposts%2Fpfbid034xSr6cGAYx241UGo75uzrEKHhTVCmQKnJUFXEntRvvrBFpVWwTFkYQJKvkz2svql&show_text=true&width=500"
-                     data-width="500"
-                     data-height="786">
-                    <span>👆 Clic para cargar publicación de Facebook</span>
-                </div>
+                <iframe
+                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fnano.samudio%2Fposts%2Fpfbid034xSr6cGAYx241UGo75uzrEKHhTVCmQKnJUFXEntRvvrBFpVWwTFkYQJKvkz2svql&show_text=true&width=500"
+                    width="500" height="786" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             </div>
-
             <div class="post-entry">
                 <div class="post-date">2 de agosto de 2024</div>
-                <div class="iframe-placeholder" 
-                     data-src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffcyt.unca%2Fposts%2Fpfbid05z1ns4aV7yzTMpbzkQuvNA2zQzV3Fa3cbQMatxhQSE5rd4f1TSoAv1evmMahqM69l&show_text=true&width=500"
-                     data-width="500"
-                     data-height="786">
-                    <span>👆 Clic para cargar publicación de Facebook</span>
-                </div>
-            </div>
+                <iframe
+                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffcyt.unca%2Fposts%2Fpfbid05z1ns4aV7yzTMpbzkQuvNA2zQzV3Fa3cbQMatxhQSE5rd4f1TSoAv1evmMahqM69l&show_text=true&width=500"
+                    width="500" height="786" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
+            </div>
             <div class="post-entry">
                 <div class="post-date">12 de julio de 2024</div>
-                <div class="iframe-placeholder" 
-                     data-src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1189890172358838%2F&show_text=true&width=267&t=0"
-                     data-width="267"
-                     data-height="786">
-                    <span>👆 Clic para cargar video de Facebook</span>
-                </div>
-            </div>
+                <iframe
+                    src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1189890172358838%2F&show_text=true&width=267&t=0"
+                    width="267" height="786" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    allowFullScreen="true"></iframe>
 
+            </div>
             <div class="post-entry">
                 <div class="post-date">21 de junio de 2024</div>
-                <div class="iframe-placeholder" 
-                     data-src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffcyt.unca%2Fposts%2Fpfbid0JuQyfmZybRDpSe8U5EMceB5FKfYnFf2ddAyf7SAaAcZ8FxDDVje6pygr2UqEYAc5l&show_text=true&width=500"
-                     data-width="500"
-                     data-height="786">
-                    <span>👆 Clic para cargar publicación de Facebook</span>
-                </div>
-            </div>
+                <iframe
+                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffcyt.unca%2Fposts%2Fpfbid0JuQyfmZybRDpSe8U5EMceB5FKfYnFf2ddAyf7SAaAcZ8FxDDVje6pygr2UqEYAc5l&show_text=true&width=500"
+                    width="500" height="786" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
+            </div>
             <div class="post-entry">
                 <div class="post-date">7 de junio de 2024</div>
-                <div class="iframe-placeholder" 
-                     data-src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffcyt.unca%2Fposts%2Fpfbid0VVcSZaCUkGit8T14Cj4c3zm34ZCKHy6PXMXKSMwcz6ziXCvgmCaVxYadKNkQrAwCl&show_text=true&width=500"
-                     data-width="500"
-                     data-height="761">
-                    <span>👆 Clic para cargar publicación de Facebook</span>
-                </div>
-            </div>
+                <iframe
+                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffcyt.unca%2Fposts%2Fpfbid0VVcSZaCUkGit8T14Cj4c3zm34ZCKHy6PXMXKSMwcz6ziXCvgmCaVxYadKNkQrAwCl&show_text=true&width=500"
+                    width="500" height="761" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
+            </div>
             <div class="post-entry">
                 <div class="post-date">27 de mayo de 2024</div>
-                <div class="iframe-placeholder" 
-                     data-src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffcyt.unca%2Fposts%2Fpfbid02KvPMUkb1e9Zdy2visYJZLa3zbGBC9sYy9TH5zpu13gY2bRT1wrHAhCyUnG9275RPl&show_text=true&width=500"
-                     data-width="500"
-                     data-height="703">
-                    <span>👆 Clic para cargar publicación de Facebook</span>
-                </div>
+                <iframe
+                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffcyt.unca%2Fposts%2Fpfbid02KvPMUkb1e9Zdy2visYJZLa3zbGBC9sYy9TH5zpu13gY2bRT1wrHAhCyUnG9275RPl&show_text=true&width=500"
+                    width="500" height="703" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
             </div>
+
+
+
 
             <div class="post-entry">
                 <div class="post-date">25 de abril de 2024</div>
-                <div class="iframe-placeholder" 
-                     data-src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffcyt.unca%2Fposts%2Fpfbid07hisvs1ctGhkYQAFUzoP9WhedWCBgbnPmrb4gJLX3z6DRwYZghVwdiMjyh2ozX5tl&show_text=true&width=500"
-                     data-width="500"
-                     data-height="786">
-                    <span>👆 Clic para cargar publicación de Facebook</span>
-                </div>
-            </div>
+                <iframe
+                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffcyt.unca%2Fposts%2Fpfbid07hisvs1ctGhkYQAFUzoP9WhedWCBgbnPmrb4gJLX3z6DRwYZghVwdiMjyh2ozX5tl&show_text=true&width=500"
+                    width="500" height="786" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
+            </div>
             <div class="post-entry">
                 <div class="post-date">11 de abril de 2024</div>
-                <div class="iframe-placeholder" 
-                     data-src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Foviedopress%2Fposts%2Fpfbid02p1akA9iu4Wr1NnPny79JWKR7xUBWBykfY2nA9X8h1JF8tyVhEoKcFG4QnXx4Ztttl&show_text=true&width=500"
-                     data-width="500"
-                     data-height="786">
-                    <span>👆 Clic para cargar publicación de Facebook</span>
-                </div>
+                <iframe
+                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Foviedopress%2Fposts%2Fpfbid02p1akA9iu4Wr1NnPny79JWKR7xUBWBykfY2nA9X8h1JF8tyVhEoKcFG4QnXx4Ztttl&show_text=true&width=500"
+                    width="500" height="786" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             </div>
 
             <div class="post-entry">
                 <div class="post-date">10 de abril de 2024</div>
-                <div class="iframe-placeholder" 
-                     data-src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffcyt.unca%2Fposts%2Fpfbid07hisvs1ctGhkYQAFUzoP9WhedWCBgbnPmrb4gJLX3z6DRwYZghVwdiMjyh2ozX5tl&show_text=true&width=500"
-                     data-width="500"
-                     data-height="786">
-                    <span>👆 Clic para cargar publicación de Facebook</span>
-                </div>
-            </div>
+                <iframe
+                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffcyt.unca%2Fposts%2Fpfbid07hisvs1ctGhkYQAFUzoP9WhedWCBgbnPmrb4gJLX3z6DRwYZghVwdiMjyh2ozX5tl&show_text=true&width=500"
+                    width="500" height="786" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
+            </div>
             <div class="post-entry">
                 <div class="post-date">15 de marzo de 2024</div>
-                <div class="iframe-placeholder" 
-                     data-src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffcyt.unca%2Fposts%2Fpfbid02Hf1Kxwe8pDqK6oZ2Bkum8Z24XWXJucKi5AAR4wH6uD3i1hXNfdCcUD3tujmiqE3Jl&show_text=true&width=500"
-                     data-width="500"
-                     data-height="767">
-                    <span>👆 Clic para cargar publicación de Facebook</span>
-                </div>
-            </div>
+                <iframe
+                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffcyt.unca%2Fposts%2Fpfbid02Hf1Kxwe8pDqK6oZ2Bkum8Z24XWXJucKi5AAR4wH6uD3i1hXNfdCcUD3tujmiqE3Jl&show_text=true&width=500"
+                    width="500" height="767" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
+            </div>
             <div class="post-entry">
                 <div class="post-date">11 de marzo de 2024</div>
-                <div class="iframe-placeholder" 
-                     data-src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffcyt.unca%2Fposts%2Fpfbid0tMXoCASE5g5ciJLzTuCzC75CLgw5jDxoVg61MfSpBXSbqoMQnkdtQzh33h7rz5nhl&show_text=true&width=500"
-                     data-width="500"
-                     data-height="792">
-                    <span>👆 Clic para cargar publicación de Facebook</span>
-                </div>
-            </div>
+                <iframe
+                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffcyt.unca%2Fposts%2Fpfbid0tMXoCASE5g5ciJLzTuCzC75CLgw5jDxoVg61MfSpBXSbqoMQnkdtQzh33h7rz5nhl&show_text=true&width=500"
+                    width="500" height="792" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
+            </div>
             <div class="post-entry">
                 <div class="post-date">5 de marzo de 2024</div>
-                <div class="iframe-placeholder" 
-                     data-src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffcyt.unca%2Fposts%2Fpfbid02t9QeESm5bkkTsG8GZ3yqQe8mdqZHn8WCHPh2kWx7HZoYTuLr1oqd8dyRi4jFtkxrl&show_text=true&width=500"
-                     data-width="500"
-                     data-height="786">
-                    <span>👆 Clic para cargar publicación de Facebook</span>
-                </div>
-            </div>
+                <iframe
+                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffcyt.unca%2Fposts%2Fpfbid02t9QeESm5bkkTsG8GZ3yqQe8mdqZHn8WCHPh2kWx7HZoYTuLr1oqd8dyRi4jFtkxrl&show_text=true&width=500"
+                    width="500" height="786" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
+            </div>
             <div class="post-entry">
                 <div class="post-date">10 de octubre de 2023</div>
-                <div class="iframe-placeholder" 
-                     data-src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffcyt.unca%2Fposts%2Fpfbid0WiAJRG7ndh1xTaCWzHfaEWGEae24GagzzPXTcr3eiBQM8WGy31qDUG7N7kRGYmoPl&show_text=true&width=500"
-                     data-width="500"
-                     data-height="799">
-                    <span>👆 Clic para cargar publicación de Facebook</span>
-                </div>
+                <iframe
+                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffcyt.unca%2Fposts%2Fpfbid0WiAJRG7ndh1xTaCWzHfaEWGEae24GagzzPXTcr3eiBQM8WGy31qDUG7N7kRGYmoPl&show_text=true&width=500"
+                    width="500" height="799" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
             </div>
+
+            <!-- 
+            <div class="post-entry">
+                <div class="post-date">2 de agosto de 2024</div>
+
+
+            </div>
+ -->
+
+
         </section>
     </main>
 
@@ -283,91 +211,6 @@
         <p>&copy; 2025 Dirección de investigación, Facultad de Ciencias y Tecnologías, Universidad Nacional de Caaguazú.
         </p>
     </footer>
-
-    <!-- Performance-optimized lazy loading script -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            let fbLoaded = false;
-            
-            // Function to load Facebook iframe
-            function loadFacebookIframe(placeholder) {
-                const iframe = document.createElement('iframe');
-                iframe.src = placeholder.dataset.src;
-                iframe.width = placeholder.dataset.width || '500';
-                iframe.height = placeholder.dataset.height || '786';
-                iframe.style.cssText = 'border:none;overflow:hidden';
-                iframe.scrolling = 'no';
-                iframe.frameBorder = '0';
-                iframe.allowFullscreen = true;
-                iframe.allow = 'autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share';
-                
-                // Add loading class
-                iframe.classList.add('loading');
-                
-                // Replace placeholder with iframe
-                placeholder.parentNode.replaceChild(iframe, placeholder);
-                
-                // Add loaded class after iframe loads
-                iframe.onload = function() {
-                    iframe.classList.remove('loading');
-                    iframe.classList.add('loaded');
-                };
-                
-                // Load Facebook SDK if not already loaded
-                if (!fbLoaded) {
-                    loadFacebookSDK();
-                    fbLoaded = true;
-                }
-            }
-            
-            // Load Facebook SDK
-            function loadFacebookSDK() {
-                if (window.FB) return;
-                
-                const script = document.createElement('script');
-                script.async = true;
-                script.defer = true;
-                script.crossOrigin = 'anonymous';
-                script.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v19.0';
-                script.nonce = '[GENERATED_NONCE_HERE]';
-                
-                script.onload = function() {
-                    if (window.FB) {
-                        window.FB.XFBML.parse();
-                    }
-                };
-                
-                document.head.appendChild(script);
-            }
-            
-            // Add click event listeners to all placeholders
-            const placeholders = document.querySelectorAll('.iframe-placeholder');
-            placeholders.forEach(placeholder => {
-                placeholder.addEventListener('click', function() {
-                    loadFacebookIframe(this);
-                });
-            });
-            
-            // Intersection Observer for automatic loading when scrolling near
-            if ('IntersectionObserver' in window) {
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            const placeholder = entry.target;
-                            // Auto-load when 50% visible (optional - can be disabled)
-                            // setTimeout(() => loadFacebookIframe(placeholder), 1000);
-                        }
-                    });
-                }, {
-                    rootMargin: '100px' // Start loading 100px before visible
-                });
-                
-                placeholders.forEach(placeholder => {
-                    observer.observe(placeholder);
-                });
-            }
-        });
-    </script>
 </body>
 
 </html>
